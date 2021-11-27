@@ -50,6 +50,7 @@ function Texture(filename) {
     if (counter == totalTextures) {
 
       loading = false;
+      displayButtons();
       button2.style('background-color', 'coral');
       sun = new Planet(40, 0, 0, random(textures));
       sun.spawnMoons(textures.length, 10);
@@ -61,7 +62,7 @@ function Texture(filename) {
 function setup() {
    //userStartAudio();
   for (let i = 0; i < totalTextures; i++){
-     Texture('data/starseed-' + i +'.png');
+     Texture('data1/starseed-' + i +'.png');
       }
 
   let canvas = createCanvas(600, 600, WEBGL);
@@ -79,11 +80,19 @@ function setup() {
 
   //cam = createEasyCam({ distance: 700 });
 
-  button = createImg('logo/play.png');
+
+
+  
+}
+
+
+function displayButtons(){
+
+    button = createImg('logo/play.png');
   // button.width = 5
   // button.height = 5
   button.style('float', 'right');
-   button.style('width', '20px');
+  button.style('width', '20px');
   button.style('padding', '5px');
   button.mousePressed(toggleSong);
 
@@ -97,11 +106,7 @@ function setup() {
   button2.mousePressed(toggleSong);
  
 
-  
 }
-
-
-
 function toggleSong() {
   if (soundFile.isPlaying()) {
     soundFile.pause();
