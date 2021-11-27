@@ -65,7 +65,7 @@ function setup() {
      Texture('data1/starseed-' + i +'.png');
       }
 
-  let canvas = createCanvas(600, 600, WEBGL);
+  let canvas = createCanvas(400, 400, WEBGL);
 
 
   // iconPause.loadPixels();
