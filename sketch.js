@@ -5,7 +5,7 @@ let cam;
 let sunTexture;
 var textures = [];
 
-var totalTextures = 805;
+var totalTextures = 200;
 var angle = 0;
 var loading = true;
 var counter = 0;
