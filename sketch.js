@@ -62,7 +62,7 @@ function Texture(filename) {
 function setup() {
    //userStartAudio();
   for (let i = 0; i < totalTextures; i++){
-     Texture('data1/starseed-' + i +'.png');
+     Texture('data1/starseed-' + i +'.PNG');
       }
 
   let canvas = createCanvas(600, 600, WEBGL);
